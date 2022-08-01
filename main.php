@@ -312,7 +312,7 @@
                     <div class="newsbox">
                         <div class="headline">
                             <h3>롯데월드 소식</h3>
-                            <a href="#none">더보기</a>
+                            <a href="board_list.php">더보기</a>
                         </div class="headline">
                         <?php
                     $con = mysqli_connect("localhost", DBuser, DBpass, DBname);

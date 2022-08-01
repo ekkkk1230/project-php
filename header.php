@@ -278,7 +278,7 @@
                                             <li><a href="#none">FAQ</a></li>
                                             <li><a href="board_list.php">고객소리함</a>
                                                 <ul class="depth3">
-                                                    <li><a href="#board_list.php">이용문의</a></li>
+                                                    <li><a href="board_list.php">이용문의</a></li>
                                                     <li><a href="#none">칭찬/불편/건의</a></li>
                                                     <li><a href="#none">분실물 센터</a></li>
                                                     <li><a href="#none">촬영문의</a></li>
