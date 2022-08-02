@@ -314,31 +314,33 @@
                             <h3>롯데월드 소식</h3>
                             <a href="board_list.php">더보기</a>
                         </div class="headline">
-                        <?php
-                    $con = mysqli_connect("localhost", DBuser, DBpass, DBname);
-                    $sql = "select * from board order by num desc limit 5";
-                    $result = mysqli_query($con, $sql); 
-                    //게시판 DB테이블인 BOARD에 저장된 최근 게시물 5개를 num필드에 내림차순으로 정렬 후 $result에 저장
+                        <ul>
+                            <?php
+                        $con = mysqli_connect("localhost", DBuser, DBpass, DBname);
+                        $sql = "select * from board order by num desc limit 5";
+                        $result = mysqli_query($con, $sql); 
+                        //게시판 DB테이블인 BOARD에 저장된 최근 게시물 5개를 num필드에 내림차순으로 정렬 후 $result에 저장
 
-                    if(!$result)
-                        echo "게시판 DB 테이블(BOARD)이 생성 전이거나 아직 게시글이 없습니다.";
+                        if(!$result)
+                            echo "게시판 DB 테이블(BOARD)이 생성 전이거나 아직 게시글이 없습니다.";
 
-                    else
-                    {
-                        while($row = mysqli_fetch_array($result))
-                        //board테이블에서 필드의 각 항목 가져오기
+                        else
                         {
-                            $regist_day =  substr($row["regist_day"],0,10);
-            ?>
-                        <li>
-                            <span><?= $row["subject"] ?></span>
-                            <span><?= $row["name"] ?></span>
-                            <span><?= $regist_day?></span>
-                        </li>
-            <?php
+                            while($row = mysqli_fetch_array($result))
+                            //board테이블에서 필드의 각 항목 가져오기
+                            {
+                                $regist_day =  substr($row["regist_day"],0,10);
+                ?>
+                            <li>
+                                <span class="new_title"><?= $row["subject"] ?></span>
+                                <span class="new_editor"><?= $row["name"] ?></span>
+                                <span class="new_date"><?= $regist_day?></span>
+                            </li>
+                <?php
+                            }
                         }
-                    }
-            ?>
+                ?>
+                        </ul>
                         <!-- <ul>
                             <li><a href="#none">종이의 집 콜라보 이벤트</a><p>2022.06.17</p></li>
                             <li><a href="#none">롯데호텔 월드 로티 로리 룸 안내</a><p>2022.05.16</p></li>

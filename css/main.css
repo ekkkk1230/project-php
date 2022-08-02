@@ -598,13 +598,19 @@ h2{ font-size: 2.5em;}
 #specail .plus_info .newsbox .headline a:hover{
     text-decoration: underline;
 }
+#specail .plus_info .newsbox ul{
+    padding: 10px;
+}
 #specail .plus_info .newsbox ul li{
+    list-style: none;
     display: flex;
     flex-flow: row nowrap;
     gap: 10px;
     justify-content: space-between;
     font-size: 1.2em;
     padding: 10px 0;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
 }
 
 #specail .plus_info .app_info{

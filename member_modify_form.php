@@ -80,12 +80,12 @@
 			       	<div class="clear"></div>
 			       	<div class="bottom_line"> </div>
 			       	<div class="buttons">
-	                	<img style="cursor:pointer" img src="./img/save_bt.png" width="60" height="30" onclick="check_input()">&nbsp;
+	                	<!-- <img style="cursor:pointer" img src="./img/save_bt.png" width="60" height="30" onclick="check_input()">&nbsp; -->
 	                	
-                  		<img id="reset_button" style="cursor:pointer" img src="./img/reset_bt.png" width="60" height="30" 
-							  onclick="reset_form()">
-						<!-- <button onclick="check_input()">저장하기</button>
-						<button onclick="reset_form()">취소하기</button> -->
+                  		<!-- <img id="reset_button" style="cursor:pointer" img src="./img/reset_bt.png" width="60" height="30" 
+							  onclick="reset_form()"> -->
+						<button onclick="check_input()">저장하기</button>
+                        <button onclick="reset_form()">취소하기</button>
 	           		</div>
            	</form>
         	</div> 
@@ -94,5 +94,6 @@
 	<footer>
     	<?php include "footer.php";?>
     </footer>
+	<script src="./js/common.js"></script>
 </body>
 </html>

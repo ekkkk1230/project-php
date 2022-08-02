@@ -79,5 +79,6 @@
 <footer>
 	<?php include "footer.php";?>
 </footer>
+<script src="./js/common.js"></script>
 </body>
 </html>
