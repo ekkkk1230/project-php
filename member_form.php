@@ -134,7 +134,7 @@
                     <div class="form">
                         <div class="inputName">
                             <label for="name">이름</label>
-                            <input type="password" name="name" id="name">
+                            <input type="text" name="name" id="name">
                         </div>
                         <!-- <div class="col1">이름</div>
                         <div class="col2">

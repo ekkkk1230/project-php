@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head> 
 <meta charset="utf-8"> 
-<title>PHP 프로그래밍2</title>
+<title>롯데월드</title>
 <link rel="stylesheet" type="text/css" href="./css/common.css">
 <link rel="stylesheet" type="text/css" href="./css/main.css">
 <link

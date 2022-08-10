@@ -15,13 +15,8 @@
                     <li class="bn7"><a href="#none">배너8</a></li>
                 </ul>
                 <button class="next"></button>
-                <div id="banner_btn">
-                    <ul class="index_btn">
-                    </ul>
-                    <!-- <ul class="paly_btn">
-                        <li><a href="#">재생버튼</a></li>
-                    </ul> -->
-                </div>
+                <ul class="index_btn">
+                </ul>
             </div>
             
             <div id="today">
@@ -332,9 +327,9 @@
                                 $regist_day =  substr($row["regist_day"],0,10);
                 ?>
                             <li>
-                                <span class="new_title"><?= $row["subject"] ?></span>
-                                <span class="new_editor"><?= $row["name"] ?></span>
-                                <span class="new_date"><?= $regist_day?></span>
+                                <a href="#none"><span class="news_title"><?= $row["subject"] ?></span></a>
+                                <span class="news_editor"><?= $row["name"] ?></span>
+                                <span class="news_date"><?= $regist_day?></span>
                             </li>
                 <?php
                             }
